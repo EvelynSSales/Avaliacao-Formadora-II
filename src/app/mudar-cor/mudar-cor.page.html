@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text="Voltar"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mudando as Cores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" [style.--background]="contentBgColor">
+  
+  <ion-list>
+    <ion-list-header>Ajuste os valores RGB</ion-list-header>
+    
+    <ion-item>
+      <ion-range min="0" max="255" [(ngModel)]="r" color="danger">
+        <div slot="start">R</div>
+      </ion-range>
+    </ion-item>
+    
+    <ion-item>
+      <ion-range min="0" max="255" [(ngModel)]="g" color="success">
+        <div slot="start">G</div>
+      </ion-range>
+    </ion-item>
+    
+    <ion-item>
+      <ion-range min="0" max="255" [(ngModel)]="b" color="tertiary">
+        <div slot="start">B</div>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-margin-top">
+    <ion-button expand="block" (click)="mudarCorBotao()" [style.--background]="btnBgColor">
+      Mudar a cor DESTE botão
+    </ion-button>
+
+    <ion-button expand="block" color="dark" (click)="mudarCorFundo()" class="ion-margin-top">
+      Mudar a cor de FUNDO da tela
+    </ion-button>
+  </div>
+</ion-content>

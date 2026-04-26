@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -14,14 +13,32 @@
 }
 
 #container p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 22px;
-
-  color: #8c8c8c;
-
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+}
+
+ion-card {
+  img {
+    width: 100%;  
+    height: 370px;     
+    object-fit: cover; 
+    object-position: center;
+  }
+}
+
+ion-button{
+  --background:#d12679;
+  --color: #ffffff;
+  --border-radius: 40px;
+}
+
+ion-toolbar{
+  --background:#212121;
+  --color: #ffffff;
+  --text-align: top center;
 }

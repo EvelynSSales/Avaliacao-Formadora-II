@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'mudar-cor',
+    loadComponent: () => import('./mudar-cor/mudar-cor.page').then( m => m.MudarCorPage)
+  },
 ];

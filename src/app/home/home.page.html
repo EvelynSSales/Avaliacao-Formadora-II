@@ -1,20 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Avaliação Formadora II</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <img src="assets/minhafoto.jpg" alt="Minha Foto" />
+    
+    <ion-card-header>
+      <ion-card-title>Evelyn Silva Sales</ion-card-title>
+      <ion-card-subtitle>Turma: 25104121 | Unidade: Bonsucesso | Turno: Manhã</ion-card-subtitle>
+    </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content>
+      <p><strong>Palavra-chave:</strong>...</p>
+      
+      <ion-button expand="block" routerLink="/mudar-cor" class="ion-margin-top" class="button">
+        Segunda Tela
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
