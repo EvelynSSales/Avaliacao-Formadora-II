@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-color-change',
@@ -18,15 +18,17 @@ export class MudarCorPage {
   btnBgColor: string = 'var(--ion-color-primary)';
   contentBgColor: string = 'var(--ion-background-color)';
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {}
 
-  //Botão 1
   mudarCorBotao() {
-  this.btnBgColor = `rgb(${Number(this.r)}, ${Number(this.g)}, ${Number(this.b)})`;
-}
+    this.btnBgColor = `rgb(${this.r}, ${this.g}, ${this.b})`;
+  }
 
-  //Botão 2
   mudarCorFundo() {
-  this.contentBgColor = `rgb(${Number(this.r)}, ${Number(this.g)}, ${Number(this.b)})`;
-}
+    this.contentBgColor = `rgb(${this.r}, ${this.g}, ${this.b})`;
+  }
+
+  voltar() {
+    this.navCtrl.back();
+  }
 }

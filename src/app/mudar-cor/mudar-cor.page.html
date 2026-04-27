@@ -1,7 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home" text="Voltar" icon="arrow-back"></ion-back-button>
+      <ion-button fill="clear" color="dark" (click)="voltar()">
+        ← Voltar
+      </ion-button>
     </ion-buttons>
     <ion-title>Mudando as Cores</ion-title>
   </ion-toolbar>
