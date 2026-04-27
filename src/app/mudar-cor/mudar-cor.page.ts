@@ -22,11 +22,11 @@ export class MudarCorPage {
 
   //Botão 1
   mudarCorBotao() {
-    this.btnBgColor = `rgb(${this.r}, ${this.g}, ${this.b})`;
-  }
+  this.btnBgColor = `rgb(${Number(this.r)}, ${Number(this.g)}, ${Number(this.b)})`;
+}
 
   //Botão 2
   mudarCorFundo() {
-    this.contentBgColor = `rgb(${this.r}, ${this.g}, ${this.b})`;
-  }
+  this.contentBgColor = `rgb(${Number(this.r)}, ${Number(this.g)}, ${Number(this.b)})`;
+}
 }

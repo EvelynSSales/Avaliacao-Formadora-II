@@ -1,4 +1,12 @@
-ion-button{
+ion-button {
   --color: #ffffff;
   --border-radius: 40px;
+}
+
+.range-container {
+  margin-bottom: 20px;
+}
+
+input[type="range"] {
+  width: 100%;
 }
