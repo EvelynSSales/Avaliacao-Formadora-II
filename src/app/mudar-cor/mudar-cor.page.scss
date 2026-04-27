@@ -10,3 +10,44 @@ ion-button {
 input[type="range"] {
   width: 100%;
 }
+
+ion-toolbar{
+  --background:#212121;
+  --color: #ffffff;
+  --text-align: top center;
+}
+
+/* base */
+input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* R - vermelho */
+.range-r {
+  background: linear-gradient(to right, black, red);
+}
+
+/* G - verde */
+.range-g {
+  background: linear-gradient(to right, black, green);
+}
+
+/* B - azul */
+.range-b {
+  background: linear-gradient(to right, black, blue);
+}
+
+/* bolinha (thumb) */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #000;
+  cursor: pointer;
+}

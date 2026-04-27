@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button fill="clear" color="dark" (click)="voltar()">
+      <ion-button fill="clear" (click)="voltar()">
         ← Voltar
       </ion-button>
     </ion-buttons>
@@ -14,18 +14,18 @@
   <h2>Ajuste os valores RGB</h2>
 
   <div class="range-container">
-    <label>R: {{ r }}</label>
-    <input type="range" min="0" max="255" [(ngModel)]="r">
+    <label style="color: red;">R: {{ r }}</label>
+    <input class="range-r" type="range" min="0" max="255" [(ngModel)]="r">
   </div>
 
   <div class="range-container">
-    <label>G: {{ g }}</label>
-    <input type="range" min="0" max="255" [(ngModel)]="g">
+    <label style="color: green;">G: {{ g }}</label>
+    <input class="range-g" type="range" min="0" max="255" [(ngModel)]="g">
   </div>
 
   <div class="range-container">
-    <label>B: {{ b }}</label>
-    <input type="range" min="0" max="255" [(ngModel)]="b">
+    <label style="color: blue;">B: {{ b }}</label>
+    <input class="range-b" type="range" min="0" max="255" [(ngModel)]="b">
   </div>
 
   <ion-button expand="block" (click)="mudarCorBotao()" [style.--background]="btnBgColor">
